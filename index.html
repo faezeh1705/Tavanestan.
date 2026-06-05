@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>توانستان</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- صفحه شروع -->
+<div id="splash">
+
+    <img src="logo.jpg" class="splash-logo">
+
+    <h1>توانستان</h1>
+
+</div>
+
+<!-- دکمه موسیقی -->
+<button id="musicBtn">🔊</button>
+
+<audio id="bgMusic" loop>
+    <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<!-- صفحه اصلی -->
+
+<section id="home">
+
+    <img src="logo.jpg" class="main-logo">
+
+    <h1>توانستان</h1>
+
+    <p class="subtitle">
+        یادگیری ریاضی با داستان، بازی و چالش
+    </p>
+
+    <button class="menu-btn" onclick="showPage('quizPage')">
+        🧮 آزمون ریاضی
+    </button>
+
+    <button class="menu-btn" onclick="showPage('storiesPage')">
+        📚 داستان‌های ریاضی
+    </button>
+
+    <button class="menu-btn" onclick="showPage('contactPage')">
+        ☎️ تماس با ما
+    </button>
+
+    <button class="menu-btn" onclick="showPage('aboutPage')">
+        ℹ️ درباره ما
+    </button>
+
+</section>
+
+<!-- آزمون -->
+
+<section id="quizPage" class="page">
+
+    <button class="back-btn" onclick="goHome()">
+        ⬅ بازگشت
+    </button>
+
+    <h2>آزمون توانستان</h2>
+
+    <input
+    type="text"
+    id="playerName"
+    placeholder="نام و نام خانوادگی">
+
+    <button id="startQuizBtn">
+        شروع آزمون
+    </button>
+
+    <div id="quizContainer"></div>
+
+</section>
+
+<!-- داستان ها -->
+
+<section id="storiesPage" class="page">
+
+    <button class="back-btn" onclick="goHome()">
+        ⬅ بازگشت
+    </button>
+
+    <h2>📚 داستان‌های ریاضی</h2>
+
+    <div class="story-box">
+
+        <img id="storyImage" src="story1.jpg">
+
+        <div class="story-controls">
+
+            <button id="prevStory">
+                ⬅️ قبلی
+            </button>
+
+            <span id="storyCounter">
+                داستان 1 از 3
+            </span>
+
+            <button id="nextStory">
+                ➡️ بعدی
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- تماس -->
+
+<section id="contactPage" class="page">
+
+    <button class="back-btn" onclick="goHome()">
+        ⬅ بازگشت
+    </button>
+
+    <h2>☎️ تماس با ما</h2>
+
+    <div class="card">
+
+        <h3>رها حسینی</h3>
+
+        <p>09378303451</p>
+
+    </div>
+
+    <div class="card">
+
+        <h3>فائزه اسفندیاری</h3>
+
+        <p>09370849611</p>
+
+    </div>
+
+</section>
+
+<!-- درباره ما -->
+
+<section id="aboutPage" class="page">
+
+    <button class="back-btn" onclick="goHome()">
+        ⬅ بازگشت
+    </button>
+
+    <h2>درباره توانستان</h2>
+
+    <div class="card">
+
+        <p>
+
+            توانستان یک پروژه آموزشی در حوزه ریاضیات است
+            که برای جشنواره خوارزمی طراحی شده است.
+
+        </p>
+
+        <br>
+
+        <p>
+
+            طراحان:
+
+            رها حسینی
+
+            و
+
+            فائزه اسفندیاری
+
+        </p>
+
+        <br>
+
+        <p>
+
+            مقطع: متوسطه اول
+
+        </p>
+
+    </div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
